@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* navigation bar */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 10px;
+}
+
+.flex .items {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.imag {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid rgb(243, 243, 243);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+
+}
+
+.imag:hover {
+  transform: scale(1.1);
+  border: 2px solid red;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img img {
+  width: 500px;
+}
+
+.backto a {
+
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  color: black;
+  font-size: 23px;
+}
+
+@media (max-width:576px) {
+  .form-control {
+    width: 75%;
+  }
+
+  .class24 {
+    margin: 20px 10px;
+  }
+
+  .backto {
+    width: 150px;
+  }
+
+  .backto {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+
+  }
+}
+
+
+@media (max-width:380px) {
+  .form-control {
+    width: 600%;
+  }
+
+  .class24 {
+    display: none;
+  }
+
+  .backto {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    /* width: 100%; */
+  }
+
+}
+
+@media (max-width:768px) {
+  .form-control {
+    width: 80%;
+  }
+
+  .class24 {
+    display: inline-block;
+    margin: 15px 50px;
+  }
+
+}
+
+@media (max-width:991px) {
+  .form-control {
+    width: 90%;
+  }
+
+  .class24 {
+    display: inline-block;
+    margin: 5px 50px;
+  }
+}
+
+
+@media (max-width:1200px) {
+  .form-control {
+    width: 90%;
+  }
+
+  .class24 {
+    display: flex;
+    margin: 5px 400px;
+
+  }
+}
